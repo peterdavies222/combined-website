@@ -67,7 +67,6 @@ onScroll('.safety-left', 'left', 'top 80%')
 onScroll('.safety-right', 'bottom', 'top 80%')
 onScroll('.sustainability-left', 'bottom', 'top 80%')
 onScroll('.sustainability-right', 'right', 'top 80%')
-/*onScroll('footer', 'bottom', 'top 80%')*/
 
 // --------------------------- Sound Button ---------------------------
 
