@@ -50,7 +50,7 @@ function onScroll(element, direction, height){
             trigger: element,
             start: height,
             scrub: false
-        }
+    }
     })
 }
 
@@ -70,15 +70,16 @@ onScroll('.sustainability-right', 'right', 'top 80%')
 /*onScroll('footer', 'bottom', 'top 80%')*/
 
 // --------------------------- Sound Button ---------------------------
-''
-const bgMusic = new Audio('audio/bg-music.mp3')
-const soundBtn = document.querySelector('#sound-btn')
 
-soundBtn.addEventListener('click', function(){
+const bgMusic = new Audio('audio/bg-music.mp3')
+
+const soundBtn = document.querySelector('#sound-btn')
+soundBtn.addEventListener('click', () => {
+  
   if(bgMusic.paused){
     bgMusic.play()
     soundBtn.name = 'volume-up'
-  }else{ 
+  }else{
     bgMusic.pause()
     soundBtn.name = 'volume-mute'
   }
@@ -88,7 +89,8 @@ soundBtn.addEventListener('click', function(){
 
 let accordionHeadings = document.querySelectorAll(".accordion-heading");
 let accordionContents = document.querySelectorAll(".accordion-content");
-accordionHeadings.forEach((heading, index), function(){
+
+accordionHeadings.forEach((heading, index) => {
     heading.addEventListener("click", function(){
         let contents = accordionContents[index];
         if (contents.style.maxHeight === contents.scrollHeight + "px"){
@@ -97,7 +99,7 @@ accordionHeadings.forEach((heading, index), function(){
         else {
             contents.style.maxHeight = contents.scrollHeight + "px"
         }
-        let chevrons = document.querySelectorAll(".accordion-heading .fa-angle-down");
+        let chevrons = document.querySelectorAll(".fa-angle-down");
         let chevron = chevrons[index]
         if (chevron.style.transform === "rotateX(180deg)") {
             chevron.style.transform = "rotateX(0deg)"
@@ -216,12 +218,13 @@ page2FooterLinks.forEach(link => {
     })
 })
 
+
 // --------------------------- Gallery on page 2 ---------------------------
 
 let omeoGallery = document.getElementById('omeo-gallery');
 lightGallery(omeoGallery, {
     controls: true
-})
+} )
 
 // --------------------------- Transport buttons on page 2 ---------------------------
 
@@ -231,8 +234,8 @@ let publicTransportContent = document.querySelector('.content-public-transport')
 let carContent = document.querySelector('.content-car')
 
 carBtn.addEventListener('click', function() {
-    if(carBtn.classList.contains('active')){
-    } else{
+    if(carBtn.classList.contains('active')){}
+    else{
         publicTransportBtn.classList.remove('active');
         carBtn.classList.add('active');
         var tlContents = gsap.timeline({delay:0})
@@ -278,11 +281,11 @@ let hamburgerClose = document.querySelector('.cross-container .fa-solid')
 
 hamburgerIcon.addEventListener('click', function(){
     let tl = gsap.timeline({delay: 0})
-    tl.fromTo(hamburgerOptions, {right: -250}, {opacity: 1, right: 0})
+    tl.fromTo(hamburgerOptions, {opacity: 0, right: -250}, {opacity: 1, right: 0})
 })
 
 hamburgerClose.addEventListener('click', function(){
     let tl = gsap.timeline({delay: 0})
-    .to(hamburgerOptions, {right: -250})
+    .to(hamburgerOptions, {opacity: 0, right: -250})
 })
     
