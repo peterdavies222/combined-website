@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.9/glider.min.css" integrity="sha512-YM6sLXVMZqkCspZoZeIPGXrhD9wxlxEF7MzniuvegURqrTGV2xTfqq1v9FJnczH+5OGFl5V78RgHZGaK34ylVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/7512150bee.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace-autoloader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <title>WA Snorkelling</title>
+    <meta name="author" content="Peter Davies">
+    <meta name="description" content="Explore Western Australia's dazzling array of snorkelling spots.">
+    <meta name="keywords" content="Snorkelling, Western Australia, swimming, ocean">
+    <link rel="icon" href="images/tab-icon.svg" alt="Nectar logo with blue background."> 
+</head>
+
+<body>
+    <sl-icon-button name="volume-up" id="sound-btn"></sl-icon-button>
+    <header>
+        <!-- ///////////////////////////// Navigation -->
+        <nav>
+            <a href="#hero-section"><img class="logo" src="images/logo.png" alt="WA Snorkelling logo"></a>
+            <a href="#locations-section" class="nav-label">Locations</a>
+            <a href="#plan-section" class="nav-label">Planning Your Trip</a>
+            <a href="#safety-section" class="nav-label">Safety</a>
+            <a href="#sustainability-section" class="nav-label">Sustainability</a>
+            
+            <button class="hamburger-icon"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+
+        <div class="hamburger-options">
+            <div class="cross-container"><i class="fa-solid fa-xmark"></i></div>
+            <ul>
+                <li><a href="#locations-section" class="nav-label">Locations</a></li>
+                <li><a href="#plan-section" class="nav-label">Planning Your Trip</a></li>
+                <li><a href="#safety-section" class="nav-label">Safety</a></li>
+                <li><a href="#sustainability-section" class="nav-label">Sustainability</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ///////////////////////////// Hero Section -->
+    <div class="page1">
+    <section id="hero-section">
+        <div class="home-bg"></div>
+        <div class="hero-content">
+            <h1>
+                <span class="h1-small">Western Australia</span><br>
+                <span class="h1-large">Snorkelling</span>
+            </h1>
+            <div class="lets-go-btn-container">
+            <sl-button class="lets-go-btn" href="#intro-section" size="medium" pill>Let's go!</sl-button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ///////////////////////////// Intro Message -->
+    <section id="intro-section">
+        <p>
+            Western Australia is fortunate to be home to world class
+            beaches, with extraordinary snorkelling spots all
+            along the coast. The waters of Western Australia are
+            filled with <strong>shipwrecks</strong>, <strong>corals</strong>, and <strong>marine life</strong>. 
+            Our beautiful Summer weather means that any day is the perfect day to
+            pack your snorkel, bathers, and towel, and head down
+            to the beach to do some snorkelling.
+        </p>
+    </section>
+
+
+    <!-- ///////////////////////////// Locations Section -->
+    <section id="locations-section">
+        <h2 class="h2-large">Let's Go Somewhere Amazing</h2>
+        <div class="featured-location fl1">
+            <img src="images/coogee-beach-omeo-wreck.webp" alt="Omeo Shipwreck aerial photo, with people swimming around.">
+            <div class="featured-location-background"></div>
+            <div class="featured-location-content">
+                <h3>Omeo Shipwreck</h3>
+                <p>
+                    Located at the North end of Coogee Beach, 
+                    Omeo Shipwreck is the perfect snorkelling spot for families, beginners, 
+                    and anyone looking to dip their toe into a bit of snorkelling.
+                    With calm waters, ample parking, and easy public transport access,
+                    you're sure to have a great day at Omeo!
+                </p>
+                <a href="#" class="location-learn-more omeo-wreck">Learn more</a>
+            </div>
+        </div>
+        <div class="featured-location fl2">
+            <img src="images/mettams-pool.jpg" alt="Mettam's pool and Trig beach, aerial shot.">
+            <div class="featured-location-background"></div>
+            <div class="featured-location-content">
+                <h3>Mettam's Pool</h3>
+                <p>
+                    With calm shallows for beginners, and deeper waters for the more experienced snorkeller, 
+                    Mettam's pool has something for everyone. There's no shortage of marine life too,
+                    such as sting rays and large schools of fish. And, when you're done snorkelling,
+                    there's no shortage of cafes nearby to refuel!
+                </p>
+                <a class="location-learn-more mettams-pool" href="https://www.google.com.au/maps/place/Mettams+Pool/@-31.8659054,115.7495414,17z/data=!3m1!4b1!4m6!3m5!1s0x2a32a94be1ee6ae1:0x95fe0c2324636350!8m2!3d-31.8637906!4d115.7518798!16s%2Fg%2F11bxfq30gv?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D">Learn more</a>
+            </div>
+        </div>
+        <h2 class="h2-small">Want to see More Locations?</h2>
+    </section>
+
+    <div class="glider-contain multiple">
+
+        <button class="glider-prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+        <div class="glider locations-glider">
+            <figure>
+                <a href="https://www.google.com/maps/place/Bunker+Bay/@-33.5415412,115.0307333,15z/data=!4m10!1m2!2m1!1sbunker+bay!3m6!1s0x2a2e668b85c927d3:0xbdf448e222d34794!8m2!3d-33.5426804!4d115.0391851!15sCgpidW5rZXIgYmF5kgEDYmF54AEA!16s%2Fg%2F11bxfgmk8p?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                    <img src="images/bunker-bay.jpeg" alt="Rocky shore surrounded by ocean.">
+                    <div class="glider-text-background"></div>
+                    <div class="glider-text">
+                        <h3 class="glider-listing-title">Bunker Bay</h3>
+                        <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.google.com/maps/place/Penguin+Island/@-32.3054481,115.6860295,16z/data=!3m1!4b1!4m6!3m5!1s0x2a3282c1469c6fcf:0xf04f0b618f16410!8m2!3d-32.3056992!4d115.6905745!16zL20vMDVtcHA4?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                    <img src="images/penguin-island.jpeg" alt="Sandy beach at Penguin Island, with ferry nearby.">
+                    <div class="glider-text-background"></div>
+                    <div class="glider-text">
+                        <h3 class="glider-listing-title">Penguin Island</h3>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.google.com/maps/place/Pinky+Beach/@-31.9893016,115.5294243,15z/data=!3m1!4b1!4m6!3m5!1s0x2a2d5a73c6ea17c5:0xcb9f19f8bb3b6998!8m2!3d-31.9893025!4d115.539724!16s%2Fg%2F11g7zf08_x?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                    <img src="images/pinky-beach.webp" alt="White sandy beach with blue ocean and lighthouse in the background.">
+                    <div class="glider-text-background"></div>
+                    <div class="glider-text">
+                        <h3 class="glider-listing-title">Pinky Beach</h3>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.google.com/maps/place/Point+Peron/@-32.2718251,115.6556441,13z/data=!4m10!1m2!2m1!1spoint+peron!3m6!1s0x2a329dcfa1007ff3:0x480a638fb348ce7!8m2!3d-32.2718251!4d115.6968428!15sCgtwb2ludCBwZXJvbloNIgtwb2ludCBwZXJvbpIBBHBhcmuaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTlNMVTkxVmt0bkVBReABAA!16s%2Fg%2F11jttr4844?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                    <img src="images/point-peron.jpeg" alt="Point Peron beach, calm ocean, and rocks in ocean.">
+                    <div class="glider-text-background"></div>
+                    <div class="glider-text">
+                        <h3 class="glider-listing-title">Point Peron</h3>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.google.com/maps/place/Aquarium/@-33.6650992,114.9988757,17z/data=!3m1!4b1!4m6!3m5!1s0x2a2e5d72833f8cb9:0x8798d8c74c9bc64!8m2!3d-33.6650993!4d115.0037466!16s%2Fg%2F11rn0srlyt?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                    <img src="images/the-aquarium.jpeg" alt="Blue water surrounded by rocks, with a person ready to jump in.">
+                    <div class="glider-text-background"></div>
+                    <div class="glider-text">
+                        <h3 class="glider-listing-title">The Aquarium</h3>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.google.com/maps/place/Yanchep+Lagoon/@-31.5499347,115.6216025,17z/data=!3m1!4b1!4m6!3m5!1s0x2bd2a774262334b7:0xc3d100e95bfcb184!8m2!3d-31.5499347!4d115.6241774!16s%2Fg%2F11ngj6gsqs?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+                    <img src="images/yanchep-lagoon.jpeg" alt="Aerial shot of Yanchep Lagoon, with the ocean, coastline and houses visible.">
+                    <div class="glider-text-background"></div>
+                    <div class="glider-text">
+                        <h3 class="glider-listing-title">Yanchep Lagoon</h3>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
+            </figure>
+        </div>
+        <button class="glider-next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- ///////////////////////////// Plan Section -->
+    <section id="plan-section">
+        <div class="plan-left">
+            <h2 class="h2-large">Plan Your Trip</h2>
+            <div class="plan-accordion">
+                <div class="accordion-item accordion-item-1">
+                    <div class="accordion-heading accordion-heading-1">
+                        <p><i class="fa-solid fa-bag-shopping"></i>What should I bring?</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="accordion-content accordion-content-1">
+                        <p>
+                            It's important to be prepared for your snorkelling trip, and that means bringing everything that 
+                            you might need. You should always bring:
+                        </p>
+                        <ul>
+                            <li><strong>Sunscreen, sunnies, and a hat</strong> for protection against the Aussie sun.</li>
+                            <li><strong>Goggles or a snorkel</strong> — how else are you going to explore the waters?</li>
+                            <li><strong>Bathers and a towel</strong></li>
+                            <li><strong>Your phone</strong> so you can stay contactable.</li>
+                            <li><strong>Plenty of water</strong> to stay hydrated.</li>
+                            <li><strong>A beach bag</strong> to put everything in.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ac-line"></div>
+                <div class="accordion-item accordion-item-2">
+                    <div class="accordion-heading accordion-heading-2">
+                        <p><i class="fa-solid fa-location-dot"></i>Where should I go?</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="accordion-content accordion-content-2">
+                        <p>Western Australia is home to dozens of beautiful snorkelling spots, with locations suitable 
+                            to a wide range of skill levels. When deciding where to go, you should consider:
+                            <ul>
+                                <li><strong>The ocean and swell conditions:</strong> weak swimmers or beginner snorkellers 
+                                    should always go snorkelling somewhere with calm waters.</li>
+                                <li><strong>Nearby facilities and amenities:</strong> you may want to wash the salt off 
+                                    you, or grab a bite to eat after your swim!</li>
+                                <li><strong>Transportation:</strong> some spots are easier to get to than others. If you're going 
+                                by public transport, you may want to find somewhere closer to train or bus routes.</li>
+                                <li><strong>Popularity:</strong> there's strength in numbers, so you may want to go somewhere 
+                                where you know there will be other swimmers around. Alternatively, you may want to go somewhere 
+                                a bit more quiet, and have the reef to yourself.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="ac-line"></div>
+                <div class="accordion-item accordion-item-3">
+                    <div class="accordion-heading accordion-heading-3">
+                        <p><i class="fa-solid fa-clock"></i>What time is best?</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="accordion-content accordion-content-3">
+                        <p>Ocean conditions are always best in the morning. For pristine calm waters, you'll want to get 
+                            to the beach between 7am and 10am. You can also check wind conditions in many weather apps, to stay 
+                            extra informed.
+                        </p>
+                        <p>
+                            For safety and better visibility, it is recommended that you only go snorkelling while the sun 
+                            is up and there is plenty of brightness. If it's getting dark, you're better off waiting for some 
+                            more sunshine.
+                        </p>
+                    </div>
+                </div>
+                <div class="ac-line"></div>
+                <div class="accordion-item accordion-item-4">
+                    <div class="accordion-heading accordion-heading-4">
+                        <p><i class="fa-solid fa-person"></i>Who should I go with?</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="accordion-content accordion-content-4">
+                        <p>There's always strength in numbers. Whether you're a beginner or a pro, you should always bring 
+                            someone with you. Always look out for each other in the water, and let someone else know where you're 
+                            going.
+                        </p>
+                    </div>
+                </div>
+                <div class="ac-line"></div>
+                <div class="accordion-item accordion-item-5">
+                    <div class="accordion-heading accordion-heading-5">
+                        <p><i class="fa-solid fa-circle-plus"></i>Is there anything else I should know?</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="accordion-content accordion-content-5">
+                        <p>Make sure you're well-prepared for your snorkelling trip. Know the conditions, bring plenty of water 
+                            and sun protection, and make sure someone knows where you're going. Visit 
+                            <a href="https://www.royallifesaving.com.au/stay-safe-active/activities/diving-and-snorkelling">this page</a> 
+                            to learn more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="plan-right">
+            <img src="images/plan-img.png" alt="Three women wearing snorkels and goggles swimming in the ocean and smiling happily.">
+        </div>
+    </section>
+
+    <!-- ///////////////////////////// Safety Section -->
+    <section id="safety-section">
+        <div class="safety-left">
+            <img src="images/safety-img.jpg" alt="A woman wearing a snorkel who is swimming underwater and smiling, while gesturing a peace sign with her hand.">
+        </div>
+        <div class="safety-right">
+            <h2 class="h2-large">Stay safe out there</h2>
+            <p>
+                Going for a snorkelling trip is exciting, but you should always take care to stay safe. 
+                Before hopping in the water, make sure you're well aware of the ocean conditions, stay contactable, 
+                learn about any sealife dangers, and go with a buddy - there's safety in numbers! And, always 
+                let someone know where you're going. Taking these few easy steps will ensure a safe and enjoyable 
+                trip for everyone!
+            </p>
+            <p>Click the icons below to learn more about staying safe on your snorkelling trip.</p>
+            <div class="icons-container">
+                <div class="icon-container conditions-icon">
+                    <img class="icon" src="images/wave-icon.png" alt="Wave icon, lineart.">
+                    <p class="icon-label">Know the Conditions</p>
+                </div>
+
+                <div class="icon-container contactable-icon">
+                    <img class="icon" src="images/phone-icon.png" alt="Phone icon, lineart.">
+                    <p class="icon-label">Stay Contactable</p>
+                </div>
+
+                <div class="icon-container wildlife-icon">
+                    <img class="icon" src="images/shark-icon.png" alt="Shark fin icon, lineart.">
+                    <p class="icon-label">Sharks and Wildlife</p>
+                </div>
+
+                <div class="icon-container buddy-icon">
+                    <img class="icon" src="images/friend-icon.png" alt="Friends icon, lineart.">
+                    <p class="icon-label">Go With a Buddy</p>
+                </div>
+            </div>
+        </div>
+        <sl-dialog label="Know the Conditions" class="conditions-dialog">
+            <p>
+                Always be aware of the swell and wind conditions, which you can check in many 
+                weather apps.
+            </p>
+            <p>
+                If the waters are looking a bit rough, it may be safer to go another time — and the visibility will 
+                be better too.
+            </p>
+            <sl-button slot="footer" variant="primary">Got it!</sl-button>
+        </sl-dialog>
+
+        <sl-dialog label="Stay Contactable" class="contactable-dialog">
+            <p>
+                Make sure someone knows where you're going, and get them to check on you every so often.
+            </p>
+            <sl-button slot="footer" variant="primary">Got it!</sl-button>
+        </sl-dialog>
+
+        <sl-dialog label="Sharks and Wildlife" class="wildlife-dialog">
+            <p>
+                Make sure you keep a safe distance from sealife. And, if there are any shark warnings, stay out of the water 
+                until it's safe.
+            </p>
+            <sl-button slot="footer" variant="primary">Got it!</sl-button>
+        </sl-dialog>
+
+        <sl-dialog label="Go With a Buddy!" class="buddy-dialog">
+            <p>
+                There's safety in numbers. Bring a snorkelling buddy, and always look out for each other.
+            </p>
+            <sl-button slot="footer" variant="primary">Got it!</sl-button>
+        </sl-dialog>
+    </section>
+
+    <!-- ///////////////////////////// Sustainability Section -->
+    <section id="sustainability-section">
+        <div class="sustainability-left">
+            <h2 class="h2-large">Let's Protect Our Oceans</h2>
+            <p>
+                Western Australia is blessed to be home to world-class snorkelling spots, and exciting biodiversity. 
+                Let's keep it that way, to ensure the longevity of our aquatic playgrounds for years to come.
+            </p>
+            <p>Click the icons below to learn more about staying safe on your snorkelling trip.</p>
+            <div class="icons-container">
+                <div class="icon-container look-icon">
+                    <img class="icon" src="images/hand-icon.png">
+                    <p class="icon-label">Look, Don't Touch</p>
+                </div>
+                <div class="icon-container rubbish-icon">
+                    <img class="icon" src="images/can-icon.png">
+                    <p class="icon-label">Pick Up Rubbish</p>
+                </div>
+                <div class="icon-container sunscreen-icon">
+                    <img class="icon" src="images/sunscreen-icon.png">
+                    <p class="icon-label">Reef-Friendly Sunscreen</p>
+                </div>
+            </div>
+        </div>
+        <div class="sustainability-right">
+            <img src="images/sustainability-img.png" alt="A snorkeller wearing bathers and fins, looking at an underwater coral.">
+        </div>
+
+        <sl-dialog label="Look, Don't Touch" class="look-dialog">
+            <p>
+                Sealife is fun to look at and explore, but for your own safety, and for the longevity of our marine life, 
+                never try to touch or grab any sea animals or plants.
+            </p>
+            <sl-button slot="footer" variant="primary">Got it!</sl-button>
+        </sl-dialog>
+
+        <sl-dialog label="Pick Up Rubbish" class=".dialog-overview rubbish-dialog">
+            <p>
+                Let's keep our waters pristine. Take your rubbish home, and if you see any other rubbish left around, 
+                do a good deed and pick it up too!
+            </p>
+            <sl-button slot="footer" variant="primary">Got it!</sl-button>
+        </sl-dialog>
+
+        <sl-dialog label="Wear Reef-Friendly Sunscreen" class="sunscreen-dialog">
+            <p>
+                Make sure your sunscreen is reef friendly — this can usually be found on the bottle. Happy fish means 
+                happy snorkellers!
+            </p>
+            <sl-button slot="footer" variant="primary">Got it!</sl-button>
+        </sl-dialog>
+    </section>
+
+    <!-- ///////////////////////////// Page 1 Footer -->
+
+    <footer>
+        <div class="footer-left">
+            <a href="#hero-section"><img class="logo" src="images/logo.png" alt="WA Snorkelling logo."></a>
+            <a href="#locations-section">Locations</a>
+            <a href="#plan-section">Planning Your Trip</a>
+            <a href="#safety-section">Safety</a>
+            <a href="#sustainability-section">Sustainability</a>
+        </div>
+        <div class="footer-right">
+            <p>This website has been created as part of an assignment in an approved course of study for Curtin University 
+                and contains copyright material not created by the author. All copyright material used remains copyright 
+                of the respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 
+                (Commonwealth of Australia). No part of this work may be reproduced without consent of the original copyright 
+                owners. See code comments for references.</p>
+        </div>
+     </footer>
+    </div>
+
+    <!-- /////////////////////////////////////////////////////////////////////////////////////// Page 2 -->
+
+    <!-- ///////////////////////////// Page 2 Hero-->
+
+    <div class="page2">
+        <section id="page2-hero-section">
+            <img class="page2-hero-img" src="images/coogee-beach-omeo-wreck.webp" alt="Aerial shot of Omeo Wreck and nearby grassy park.">
+            <button class="back-to-home-btn"><i class="fa-solid fa-angle-left"></i>Back to home</button>
+            <h1>
+                <span class="h1-small">Coogee Beach</span><br>
+                <span class="h1-large">Omeo Wreck</span>
+            </h1>
+        </section>
+
+        <!-- ///////////////////////////// Page 2 Intro-->       
+
+        <section id="page2-intro-section">
+            <div id="omeo-gallery">
+                <img src="images/wreck-1.webp" alt="Aerial shot of Omeo Shipwreck and beach.">
+                <img src="images/wreck-2.jpg" alt="North end of Coogee beach, with stairs, rocks, and swimmers visible.">
+                <img src="images/wreck-3.jpg" alt="Aerial shot of Omeo wreck, as well as nearby housing development.">
+            </div>
+            <h2 class="h2-large">A snorkeller's paradise</h2>
+            <p>
+                Located 30 minutes from Perth's CBD, Omeo Shipwreck is the perfect snorkelling location for beginners and families. 
+                There is ample parking for those getting there by car, as well as a nearby bus stop with hourly services. When you're done 
+                exploring the shipwreck, you can sunbake on the warm Coogee Beach sand, or head to a nearby cafe to refresh and 
+                refuel.
+            </p>
+            
+        </section>
+
+        <!-- ///////////////////////////// Page 2 Transport-->
+        <section id="page2-transport-section">
+            <div class="transport-left">
+                <h2 class="h2-large">How to get here</h2>
+                <div class="transport-left-buttons">
+                    <p class="public-transport-button active"><i class="fa-solid fa-train-subway"></i>By Public Transport</p>
+                    <p class="car car-button"><i class="fa-solid fa-car"></i>By Car</p>
+                </div>
+                <div class="content content-public-transport">
+                    <p>
+                        Omeo Wreck, Coogee Beach, and the surrounding suburb of Port Coogee, can all be easily accessed by the 
+                        512 bus route, which has hourly services from Murdoch Train Station.
+                    </p>
+                    <ul>
+                        <li><strong>Perth Underground Train Station</strong><br>Catch Mandurah line train, platform 2</li>
+                        <li><i class="fa-solid fa-down-long"></i></li>
+                        <li><strong>Murdoch Train Station</strong><br>Transfer to bus 512, stand 4</li>
+                        <li><i class="fa-solid fa-down-long"></i></li>
+                        <li><strong>Orsino Boulevard After Perlinte View Bus Stop</strong><br>Exit bus and walk to Omeo Wreck</li>
+                        <li><i class="fa-solid fa-down-long"></i></li>
+                        <li><strong>Omeo Wreck</strong><br>Arrive</li>
+                    </ul>
+                </div>
+                <div class="content content-car">
+                    <p>
+                        There's plenty of parking around Coogee Beach and Omeo Wreck. However, on weekends, as well as during the Summer holidays, 
+                        parking can still be quite a challenge. We suggest arriving early, to beat the crowds and get a good 
+                        parking spot.
+                    </p>
+                    <h3>Drive Times</h3>
+                    <p><strong>From Perth CBD</strong><br>33 minutes</p>
+                    <p><strong>From Fremantle</strong><br>11 minutes</p>
+                </div>
+            </div>
+            <div class="transport-right">
+                <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.8254056075048!2d115.76091118553977!3d-32.10575698712732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a3298aa444065f3%3A0x4ed15f3bfea27fb7!2sOmeo%20Wreck!5e0!3m2!1sen!2sau!4v1729223307566!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- ///////////////////////////// Page 2 Accommodation-->
+        <section id="page2-accommodation-section">
+            <h2 class="h2-large">Looking For Accommodation?</h2>
+            <p class="accommodation-explanation">Here are a few of our top picks.</p>
+            <div class="accommodations-container">
+
+                <div class="accommodation-listing novotel">
+                    <img src="images/novotel.jpg" alt="Modern hotel interior, Novotel Murray Street.">
+                    <div class="accommodation-text">
+                        <h3>Novotel Perth Murray Street</h3>
+                        <sl-rating label="Rating" readonly value="4.5"></sl-rating>
+                        <p>Boasting a bar, Novotel Perth Murray Street is set in the centre of Perth, 1 km from Perth Convention and Exhibition Centre. Among the facilities at this property are room service and a 24-hour front desk, along with free WiFi throughout the property. The property has a year-round outdoor pool, fitness centre, sauna and restaurant.</p>
+                        <a href="https://www.booking.com/hotel/au/novotel-perth-murray-street.en-gb.html?aid=356980&label=gog235jc-1DCAsoD0Ibbm92b3RlbC1wZXJ0aC1tdXJyYXktc3RyZWV0SDNYA2gPiAEBmAEJuAEHyAEM2AED6AEBiAIBqAIDuALXv4O5BsACAdICJGZhM2ZhOWMzLWY5MjEtNDMyMy1iYWQ2LWZkZjEzNWViOWU5NdgCBOACAQ&sid=b6d0f18fbd8e34342b1c7a91833e96b3&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="book-accommodation-btn">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="accommodation-listing crown">
+                    <img src="images/crown.jpg" alt="Crown Metropol exterior, pool, and poolside chairs.">
+                    <div class="accommodation-text">
+                        <h3>Crown Metropol Perth</h3>
+                        <sl-rating label="Rating" readonly value="5"></sl-rating>
+                        <p>Situated on the banks of the Swan River overlooking the Perth city skyline, Crown Metropol Perth offers accommodation which is a 15-minute drive from Perth’s International and Domestic Airports. Perth city centre is a 5-minute drive away.</p>
+                        <a href="https://www.booking.com/hotel/au/crown-metropol-perth.en-gb.html?aid=356980&label=gog235jc-1DCAsoD0IUY3Jvd24tbWV0cm9wb2wtcGVydGhIM1gDaA-IAQGYAQm4AQfIAQzYAQPoAQGIAgGoAgO4Ap3Ag7kGwAIB0gIkNTljMmI3MmYtYzFlMi00YjI0LTgwYWYtZGFjOWI0MDM0YzJk2AIE4AIB&sid=b6d0f18fbd8e34342b1c7a91833e96b3&dist=0&keep_landing=1&sb_price_type=total&type=total&" class="book-accommodation-btn">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="accommodation-listing esplanade">
+                    <img src="images/esplanade.jpg" alt="Esplanade Hotel exterior and street.">
+                    <div class="accommodation-text">
+                        <h3>Esplanade Hotel Fremantle</h3>
+                        <sl-rating label="Rating" readonly value="4.5"></sl-rating>
+                        <p>Esplanade Hotel Fremantle - by Rydges is located in the heart of Fremantle, overlooking Esplanade Park. 20 minutes' drive from central Perth, this hotel offers 2 outdoor pools and a fitness centre. A full buffet breakfast is available.</p>
+                        <a href="https://www.booking.com/hotel/au/esplanade-fremantle.en-gb.html?aid=311984&label=esplanade-fremantle-L4Q2ZT9ja4dw_HoBsV9NOQS303003223595%3Apl%3Ata%3Ap1%3Ap21%2C113%2C000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-123107936%3Alp9070532%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0HqQKyXtkq0k&sid=b6d0f18fbd8e34342b1c7a91833e96b3&dest_id=-1574213;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1730207801;srpvid=2bf15d5a85b70249;type=total;ucfs=1&" class="book-accommodation-btn">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ///////////////////////////// Page 2 Attractions-->     
+        <section id="attractions-section">
+            <h2 class="h2-large">Just In Case You Get Bored...</h2>
+
+            <div class="attractions glider-contain">
+                <div class="attractions-glider">
+                    <div class="attraction-listing glowing-rooms-attraction">
+                        <img src="images/3d-mini-golf.jpg" alt="People playing mini golf in the 3D glowing room.">
+                        <div class="attraction-background"></div>
+                        <div class="attraction-content">
+                            <h3>3d Glowing Rooms</h3>
+                            <p>
+                                When it comes to 3D indoor mini golf in Perth, you can count on Glowing Rooms for an incredible 
+                                experience. On top of our 3D mini golf course, we also offer amazing VR escape rooms that will 
+                                blow your mind and fantastic catering packages for your friends, family or team!
+                            </p>
+                            <a href="https://www.glowingrooms.com.au">Learn more</a>
+                        </div>   
+                    </div>
+                    <div class="attraction-listing fremantle-attraction">
+                        <img src="images/fremantle.jpeg" alt="Older style multi-storey building in Fremantle with red bricks and balconies.">
+                        <div class="attraction-background"></div>
+                        <div class="attraction-content">
+                            <h3>Fremantle</h3>
+                            <p>
+                                With plenty of quirky cafes and restaurants, as well as a vibrant art's scene and night life, 
+                                Fremantle is an exciting hub of activity, and has something for people of all ages.
+                            </p>
+                            <a href="https://www.destinationperth.com.au/explore-perth/fremantle/">Learn more</a>
+                        </div>   
+                    </div>
+                    <div class="attraction-listing dog-beach-attraction">
+                        <img src="images/dog-beach.jpeg" alt="People and dogs at South Fremantle dog beach.">
+                        <div class="attraction-background"></div>
+                        <div class="attraction-content">
+                            <h3>South Fremantle Dog Beach</h3>
+                            <p>
+                                Tired of looking at the fish? At South Fremantle dog beach, you'll be sure to make some new 
+                                furry friends. With a nearby cafe and park, and friendly locals and their pets, you're sure to 
+                                have a great day out.
+                            </p>
+                            <a href="https://perthisok.com/best-of-wa/perth-dog-beaches/">Learn more</a>
+                        </div>   
+                    </div>
+                </div>
+                <button aria-label="Previous" class="attractions glider-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button aria-label="Next" class="attractions glider-next"><i class="fa-solid fa-chevron-right"></i></button>
+                <div role="tablist" class="dots"></div>
+            </div>
+        </section>
+
+        <!-- ///////////////////////////// Page 2 Footer -->
+
+        <footer>
+            <div class="footer-left">
+                <a href="#hero-section" class="page2-footer-link"><img class="logo" src="images/logo.png"></a>
+                <a href="#locations-section" class="page2-footer-link">Locations</a>
+                <a href="#plan-section" class="page2-footer-link">Planning Your Trip</a>
+                <a href="#safety-section" class="page2-footer-link">Safety</a>
+                <a href="#sustainability-section" class="page2-footer-link">Sustainability</a>
+            </div>
+            <div class="footer-right">
+                <p>
+                    This website has been created as part of an assignment in an approved course of study for Curtin University 
+                    and contains copyright material not created by the author. All copyright material used remains copyright 
+                    of the respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 
+                    (Commonwealth of Australia). No part of this work may be reproduced without consent of the original copyright 
+                    owners. See code comments for references.
+                </p>
+            </div>
+         </footer>
+        
+    </div>    
+
+    
+    
+    
+
+    <!-- ///////////////////////////// Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.9/glider.min.js" integrity="sha512-4Y5AXHQsKRWv/566s/2jHXVBo2J4xNpapJJeaVGSbSEbHroH82lNN8y9dxbI9j5q0O9uzef5yRy5glBvfO941g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
