@@ -1059,7 +1059,6 @@ sl-rating {
     }
     .featured-location {
         height: 450px;
-        border: solid red 1px;
     }
     .featured-location-background {
         width: 100%;
@@ -1073,7 +1072,6 @@ sl-rating {
         left: 15px;
         transform: none !important;
         top: calc(50% + 15px);
-        border: solid red 1px;
     }
     .icons-container {
         flex-wrap: wrap;
