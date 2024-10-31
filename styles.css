@@ -567,7 +567,7 @@ footer {
 
 /* //////////////////////////////////////////////////////// Page 2 //////////////////////////////////////////////////////// */
 
-.page2{
+.page1{
     display: none;
     opacity: 0;
 }
@@ -1058,13 +1058,134 @@ sl-rating {
     sl-button.lets-go-btn::part(label) {
         font-size: 0.9rem;
     }
-    .featured-location p {
-        display: none;
+    .featured-location {
+        height: 450px;
+        border: solid red 1px;
     }
-    .attraction-content p {
-        display: none;
+    .featured-location-background {
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+    }
+    .featured-location-content {
+        position: absolute;
+        width: calc(100% - 30px);
+        height: fit-content;
+        left: 15px;
+        transform: none !important;
+        top: calc(50% + 15px);
+        border: solid red 1px;
+    }
+    .icons-container {
+        flex-wrap: wrap;
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+    .footer-left {
+        width: 100%;
+    }
+    .footer-right {
+        width: 100%;
+        height: 100px;
+    }
+    .footer-right p {
+        bottom: auto;
+    }
+    #omeo-gallery {
+        flex-direction: column;
+    }
+    #omeo-gallery img {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 5px;
+    }
+    .attraction-background {
+        width: 100%;
+        height: 50%;
+        top: 50%;
+    }
+    .attraction-content {
+        width: calc(100% - 30px);
+        left: 15px;
+        top: calc(50% + 15px);
+        transform: none;
     }
     .attraction-content h3 {
         margin-bottom: 20px;
+    }
+    .attraction-content p {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    p:not(footer p) {
+        font-size: 12px !important;
+    }
+    #plan-section li {
+        font-size: 12px;
+    }
+    .plan-right {
+        margin-bottom: 0;
+    }
+    .safety-left {
+        margin-bottom: 0;
+    }
+    .sustainability-right {
+        margin-bottom: 0;
+    }
+    footer p {
+        font-size: 8px !important;
+    }
+    .attraction-listing {
+        height: 450px !important;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .h1-large {
+        font-size: 40px;
+    }
+    nav {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .h1-small {
+        font-size: 14px;
+    }
+    section:not(#hero-section):not(#page2-hero-section) {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+    }
+    .back-to-home-btn {
+        left: 15px !important;
+        padding: 4px 7px !important;
+    }
+    #omeo-gallery {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .accommodation-listing .accommodation-text {
+        margin-bottom: 30px !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .h1-large {
+        font-size: 30px;
+    }
+    .h1-small {
+        font-size: 12px;
+    }
+    .transport-left-buttons p {
+        font-size: 10px !important;
     }
 }
