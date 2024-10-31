@@ -36,7 +36,6 @@ h1 {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-fill-mode: normal;
 }
 
 @keyframes title-animation {
@@ -249,7 +248,6 @@ sl-button.lets-go-btn::part(base):hover {
 /* //////////////////////////// Intro Section */
 
 #intro-section p {
-    font-weight: light;
     line-height: 200%;
 }
 
@@ -533,7 +531,6 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #dcdbd9 !important;
-    align-items: bottom;
 }
 
 .footer-left, .footer-right {
@@ -588,7 +585,7 @@ footer {
     top: 50px;
     left: 50px;
     z-index: 101;
-    color: 2e2e2e;
+    color: #2e2e2e;
     background-color: rgba(209, 209, 209, 0.5);
     padding: 10px 20px;
     border-radius: 100px;
@@ -607,7 +604,6 @@ footer {
 /* //////////////////////////// Page 2 Intro Section */
 
 #page2-intro-section p {
-    font-weight: light;
     line-height: 200%;
 }
 
@@ -665,7 +661,6 @@ footer {
     height: 30px;
     top: 8px;
     border-radius: 10px;
-    font-weight: light;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -959,7 +954,6 @@ sl-rating {
         display: block;
         font-size: 1.5em;
         color: rgb(0, 117, 128);
-        background-color: none;
         border: none;
         background: none;
     }
